@@ -1,0 +1,102 @@
+/* Hacker Theme Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #111111;
+    border-bottom: 1px solid #00ff00;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #00ff00;
+    padding-bottom: 20px;
+}
+
+section h2 {
+    color: #00ff00;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #111111;
+    padding: 15px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+
+pre code {
+    color: #00ff00;
+    font-size: 0.9rem;
+}
+
+button.copy-btn {
+    background-color: #00ff00;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button.copy-btn:hover {
+    background-color: #00cc00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111111;
+    border-top: 1px solid #00ff00;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    pre code {
+        font-size: 0.8rem;
+    }
+}

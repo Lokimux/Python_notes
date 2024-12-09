@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Notes - Hacker Theme</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Python Notes</h1>
+        <p>Your guide to Python from Zero to Hero!</p>
+    </header>
+    <main>
+        <!-- Section: What is Python -->
+        <section>
+            <h2>1. What is Python?</h2>
+            <p>Python is a versatile, easy-to-learn programming language used for various applications.</p>
+            <pre><code class="code-block">print("Hello, World!")</code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Variables -->
+        <section>
+            <h2>2. Variables</h2>
+            <p>Variables are containers for storing data. They make it easy to reuse and manipulate values.</p>
+            <pre><code class="code-block">
+x = "Hello, World!"  # Storing "Hello, World!" in a variable
+print(x)  # Output: Hello, World!
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Input and Output -->
+        <section>
+            <h2>3. Input and Output</h2>
+            <p>Take user input and display it using Python's <code>input()</code> and <code>print()</code> functions.</p>
+            <pre><code class="code-block">
+user_input = input("Enter something: ")  # Input a message
+print("You entered:", user_input)  # Output the user's input
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Decision Making -->
+        <section>
+            <h2>4. Decision Making (if, elif, else)</h2>
+            <p>Control the flow of your program based on conditions.</p>
+            <pre><code class="code-block">
+message = "Hello, World!"
+
+if len(message) > 10:
+    print("Message is long:", message)
+else:
+    print("Message is short.")
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Loops -->
+        <section>
+            <h2>5. Loops</h2>
+            <p>Use loops to repeat actions.</p>
+            <h3>For Loop</h3>
+            <pre><code class="code-block">
+for i in range(3):
+    print("Hello, World!")  # Prints three times
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <h3>While Loop</h3>
+            <pre><code class="code-block">
+count = 0
+while count < 3:
+    print("Hello, World!")  # Prints three times
+    count += 1
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Lists -->
+        <section>
+            <h2>6. Lists</h2>
+            <p>A list is an ordered collection of items.</p>
+            <pre><code class="code-block">
+greetings = ["Hello, World!", "Hi, World!", "Hey, World!"]
+
+for greeting in greetings:
+    print(greeting)  # Prints each greeting
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Tuples -->
+        <section>
+            <h2>7. Tuples</h2>
+            <p>Tuples are immutable lists.</p>
+            <pre><code class="code-block">
+greetings = ("Hello, World!", "Hi, World!", "Hey, World!")
+print(greetings[0])  # Prints: Hello, World!
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Dictionaries -->
+        <section>
+            <h2>8. Dictionaries</h2>
+            <p>Dictionaries store key-value pairs.</p>
+            <pre><code class="code-block">
+greeting_dict = {"English": "Hello, World!", "Spanish": "Hola, Mundo!"}
+print(greeting_dict["English"])  # Prints: Hello, World!
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Functions -->
+        <section>
+            <h2>9. Functions</h2>
+            <p>Functions are reusable blocks of code.</p>
+            <pre><code class="code-block">
+def greet():
+    return "Hello, World!"
+
+print(greet())  # Calls the function and prints: Hello, World!
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+        <!-- Section: Classes -->
+        <section>
+            <h2>10. Classes</h2>
+            <p>Classes define blueprints for objects.</p>
+            <pre><code class="code-block">
+class Greeting:
+    def __init__(self, message):
+        self.message = message
+
+    def display(self):
+        print(self.message)
+
+g = Greeting("Hello, World!")
+g.display()  # Prints: Hello, World!
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+
+
+        <section>
+            <h2>11. Strings</h2>
+            <p>Strings are sequences of characters enclosed in single or double quotes.</p>
+            <pre><code class="code-block">
+        # String Examples
+        greeting = "Hello, World!"
+        print(greeting.upper())  # Converts to uppercase: HELLO, WORLD!
+        print(greeting.lower())  # Converts to lowercase: hello, world!
+        print(greeting[0:5])     # Slicing: Hello
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        <section>
+            <h2>12. Error Handling</h2>
+            <p>Use try-except blocks to handle errors gracefully.</p>
+            <pre><code class="code-block">
+        try:
+            x = int("Hello")
+        except ValueError:
+            print("Invalid conversion!")  # Prints: Invalid conversion!
+        finally:
+            print("Execution finished.")
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        <section>
+            <h2>13. File Handling</h2>
+            <p>Python provides functions to read, write, and manipulate files.</p>
+            <pre><code class="code-block">
+        # Writing to a file
+        with open("example.txt", "w") as file:
+            file.write("Hello, World!")
+        
+        # Reading from a file
+        with open("example.txt", "r") as file:
+            content = file.read()
+            print(content)  # Prints: Hello, World!
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        <section>
+            <h2>14. List Comprehension</h2>
+            <p>List comprehensions are a concise way to create lists.</p>
+            <pre><code class="code-block">
+        # Create a list of squares
+        squares = [x**2 for x in range(5)]
+        print(squares)  # Prints: [0, 1, 4, 9, 16]
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        <section>
+            <h2>15. Lambda Functions</h2>
+            <p>Lambda functions are small, anonymous functions.</p>
+            <pre><code class="code-block">
+        # Lambda function to add two numbers
+        add = lambda x, y: x + y
+        print(add(2, 3))  # Prints: 5
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        <section>
+            <h2>16. Modules</h2>
+            <p>Modules are files containing Python code that can be reused.</p>
+            <pre><code class="code-block">
+        # Importing a module
+        import math
+        print(math.sqrt(16))  # Prints: 4.0
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        
+        <section>
+            <h2>17. Decorators</h2>
+            <p>Decorators are functions that modify the behavior of other functions.</p>
+            <pre><code class="code-block">
+        def decorator(func):
+            def wrapper():
+                print("Before the function")
+                func()
+                print("After the function")
+            return wrapper
+        
+        @decorator
+        def say_hello():
+            print("Hello, World!")
+        
+        say_hello()
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        
+        <section>
+            <h2>18. Generators</h2>
+            <p>Generators produce values one at a time using the `yield` keyword.</p>
+            <pre><code class="code-block">
+        def count_up_to(maximum):
+            count = 1
+            while count <= maximum:
+                yield count
+                count += 1
+        
+        for num in count_up_to(5):
+            print(num)  # Prints: 1, 2, 3, 4, 5
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        <section>
+            <h2>19. Advanced Topics</h2>
+            <h3>1. Python Virtual Environment</h3>
+            <p>Create isolated environments for Python projects.</p>
+            <pre><code class="code-block">
+        # Create a virtual environment
+        python -m venv myenv
+        
+        # Activate the virtual environment (Linux/Mac)
+        source myenv/bin/activate
+        
+        # Activate the virtual environment (Windows)
+        myenv\Scripts\activate
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            
+            <h3>2. Asyncio</h3>
+            <p>Asyncio is used for asynchronous programming.</p>
+            <pre><code class="code-block">
+        import asyncio
+        
+        async def say_hello():
+            await asyncio.sleep(1)
+            print("Hello, World!")
+        
+        asyncio.run(say_hello())  # Prints: Hello, World! after 1 second
+            </code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </section>
+        
+        <!-- Add more sections for remaining topics like Strings, Error Handling, Advanced Concepts -->
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Python Notes | Built with 💚 by Hacker Style</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
